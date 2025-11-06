@@ -1,0 +1,72 @@
+
+ 
+.LeftBar:hover{
+    opacity: 10%;
+}
+.LeftSideBar{
+   margin: 0;
+  padding: 10px;
+  width: 210px;
+  background-color:#381e72;;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+}
+.LeftBarHead{
+  color: white;
+}
+.LeftBar{
+    /* border: solid white; */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid #E8DEF8;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.RightSideBar{
+   position: fixed;
+  right: 0;
+  width: 210px;
+   height: 100%;
+  background-color: #381e72;
+  /* border: 3px solid green; */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+#SearchBar{
+  position: fixed;
+  right: 0;
+  
+}
+header{
+  /* border: solid black; */
+  display: flex;
+  align-items: end;
+  
+}
+#Headermsg{
+  color: #381e72;
+}
+.body{
+  background-color: #633b48;
+}
+footer{
+/* border: solid black; */
+bottom: 0;
+width: 100%;
+height: 100px;
+position: fixed;
+background-color: #381e72;
+}
+.BottomButton{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #E8DEF8;
+}
+.BottomButton:hover{
+  opacity: 80%;
+}
