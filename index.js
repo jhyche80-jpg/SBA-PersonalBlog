@@ -52,14 +52,16 @@ function UpdatePage(PostToRender = Posts) {
         NewpostTag.classList.add("post-card");
 
         NewpostTag.innerHTML = `
-        <div>
-            <div class="d-flex flex-row justify-content-between align-items-center" id="Post${p.id}">
-                <h3>${p.Title}</h3>
-                <div>
-                <button class="Deletebtn">Delete Post</button>
-                <button class="EditBtn">Edit Post</button>
+        <div class="rounded">
+            <div class="d-flex flex-row justify-content-between align-items-start mb-3" style= "width:auto;"id="Post${p.id}">
+            
+            <h4 style=  "width:400px;" class ="fs-2">${p.Title}</h4>
+                <div class="ms-5">
+                <button class="Deletebtn btn btn-primary my-hover-btn me-2">Delete Post</button>
+                <button class="EditBtn btn btn-primary my-hover-btn">Edit Post</button>
                 </div>
             </div>
+            
             <p><strong>Comment:</strong> ${p.Post}</p>
             <small>${p.Date}
       </div>
