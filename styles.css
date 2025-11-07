@@ -1,7 +1,9 @@
 .LeftBar:hover {
   opacity: 10%;
 }
-
+.logo{
+  position: fixed;
+}
 .LeftSideBar {
   margin: 0;
   padding: 10px;
@@ -151,7 +153,8 @@ input:focus{
   align-items: stretch;        /* items full width */
   gap: 15px;
   min-height: 100vh;
-  border: solid black;
+
+  
 }
 
 #MainContent div{
@@ -166,6 +169,7 @@ input:focus{
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 
 }
 .post-card h3 {

@@ -19,7 +19,7 @@
         <div class="LeftSideBar d-flex flex-column">
 
             <h3 class="LeftBarHead">Suggestions</h3>
-
+            <a href="index.html" class="LeftBar">Home</a>
             <a href="" class="LeftBar">Anime</a>
             <a href="" class="LeftBar">Python</a>
             <a href="" class="LeftBar"> Software Development</a>
@@ -31,7 +31,7 @@
             <a href="" class="LeftBar">Explore</a>
             <a href="" class="LeftBar">Streaming</a>
             <a href="" class="LeftBar">Settings </a>
-            
+
         </div>
         <div id="MainContent">
             <div class="Postcard">
@@ -46,15 +46,16 @@
             <div class="MyModal" id="MyModal">
                 <div id="AddPostModal" class="AddPostModal">
                     <div>
-                        <label for="Title" class="d-flex flex-column"> <strong>Title:</strong> 
-                            <span id="TitleREQ"class="text-secondary" style="display: none;"> This is required</span>
-                            </label>
-                        <input type="text" name="Title" id="Title" class="mb-5" placeholder="Title" required>
+                        <label for="Title" class="d-flex flex-column"> <strong>Title:</strong>
+                            <span id="TitleREQ" class="text-secondary" style="display: none;"> This is required</span>
+                        </label>
+                        <input type="text" name="Title" id="Title" class="mb-5" maxlength="15" placeholder="Title" required>
                     </div>
                     <div class="d-flex  flex-column mb-3">
                         <label for="Content"><strong>Comment:</strong> </label>
                         <p id="CommentREQ" class="text-secondary" style="display: none;"> This is required</p>
-                        <textarea id="Content" name="Content" rows="5" cols="33"  required minlength="1" placeholder="Type Comment Here "></textarea>
+                        <textarea id="Content" name="Content" rows="5" cols="33" required minlength="1"
+                            placeholder="Type Comment Here "></textarea>
                     </div>
                     <div>
                         <button id="Submit" type="submit">Submit</button>
