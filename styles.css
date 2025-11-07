@@ -29,15 +29,15 @@
 }
 
 .RightSideBar {
-  position: fixed;
-  right: 0;
   width: 210px;
+  position: fixed;
+  top: 0;
+  right: 0;
   height: 100%;
   background-color: #381e72;
-  /* border: 3px solid green; */
-  color: white;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 3%;
 }
 
 #SearchBar {
@@ -141,3 +141,56 @@ input:focus{
   border-width: 5px;
 
 }
+#MainContent {
+    margin-left: 230px;  /* space for left sidebar */
+  margin-right: 300px; /* space for right sidebar */
+  padding: 0 20px;     /* horizontal padding only */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* top */
+  align-items: stretch;        /* items full width */
+  gap: 15px;
+  min-height: 100vh;
+  border: solid black;
+}
+
+#MainContent div{
+  width: 80%;
+  height: 50%;
+  border-radius: 5px;
+  margin-left: 10%;
+  
+}
+.post-card {
+  background-color: #381e72;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.post-card h3 {
+  margin: 0 0 10px;
+}
+.post-card p {
+  margin: 0;
+}
+.ImageIcon{
+  width: 32px;
+  height: 32px;
+  background-color: #E8DEF8;
+}
+.ImageIcon:hover{
+  opacity: 80%;
+}
+.MenuBtn{
+  background-color: #E8DEF8;
+  width: 50px;
+  height: 50px;
+}
+/* .Postcard{
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+} */
