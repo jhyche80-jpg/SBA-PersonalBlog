@@ -28,8 +28,11 @@
   border-bottom: solid #E8DEF8;
   margin-top: 10px;
   border-radius: 10px;
+  
 }
-
+main{
+  margin-top: 3%;
+}
 .RightSideBar {
   width: 210px;
   position: fixed;
@@ -49,9 +52,12 @@
 }
 
 header {
-  /* border: solid black; */
+ 
   display: flex;
   align-items: end;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 
 }
 
@@ -64,7 +70,7 @@ header {
 }
 
 footer {
-  /* border: solid black; */
+ 
   bottom: 0;
   width: 100%;
   height: 100px;
@@ -144,15 +150,19 @@ input:focus{
 
 }
 #MainContent {
-    margin-left: 230px;  /* space for left sidebar */
-  margin-right: 300px; /* space for right sidebar */
-  padding: 0 20px;     /* horizontal padding only */
+     margin-left: 230px;  /* space for left sidebar */
+  margin-right: 230px; /* space for right sidebar */
+  padding: 20px;
+  padding-bottom: 150px; /* extra space at the bottom for footer */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* top */
-  align-items: stretch;        /* items full width */
+  justify-content: flex-start; /* align items to the top */
+  align-items: center;
   gap: 15px;
   min-height: 100vh;
+  
+  width: 75%;
+  top: 0;
 
   
 }
