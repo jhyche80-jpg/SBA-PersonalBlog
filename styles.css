@@ -49,6 +49,12 @@ main{
   right: 0;
 
 }
+#geek{
+   font-weight: bold;
+  background: linear-gradient(180deg, #fcfcfc, #626263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 header {
  
@@ -61,7 +67,11 @@ header {
 }
 
 #Headermsg {
-  color: #381e72;
+  
+  font-weight: bold;
+  background: linear-gradient(180deg, #530fe6, #28076e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .body {
