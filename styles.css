@@ -71,16 +71,17 @@ footer {
 }
 
 #AddPostModal {
- background-color: #fefefe;
+ background-color: #FA3916;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
 }
 .MyModal {
-    position: fixed;
+  display: none;
+  position: fixed;
   z-index: 1;
- left: 0;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -89,9 +90,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   
 }
-
-
-
 
 .BottomButton {
   width: fit-content;
@@ -117,8 +115,29 @@ footer {
   border-width: 2px;
   position: relative;
 }
-
+#Submit, #Close{
+  background-color: wheat;
+}
 .AddBtn:hover {
   opacity: 80%;
 }
+#Submit:hover, #Close:hover {
+  opacity: 80%;
 
+}
+
+textarea{
+  background-color: wheat;
+}
+textarea:focus{
+  border: solid rgb(23, 154, 214);
+  border-width: 5px;
+}
+input{
+  background-color: wheat;
+}
+input:focus{
+  border: solid rgb(23, 154, 214);
+  border-width: 5px;
+
+}
