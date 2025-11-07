@@ -36,21 +36,47 @@
         <div id="MainContent">
 
         </div>
-        <div class="RightSideBar">
-            <h3>Friends Online</h3>
-            <div></div>
-        </div>
+        <div class="d-flex flex-row justify-content-end">
 
+            <div class="MyModal">
+                <div id="AddPostModal" class="AddPostModal">
+                    <div>
+                        <label for="Title" class="d-flex flex-column"> Title:</label>
+                        <input type="text" name="Title" id="Title" class="mb-5" placeholder="Title" required>
+                    </div>
+                    <div class="d-flex  flex-column mb-3">
+                        <label for="Content">Comment: </label>
+                        <textarea id="Content" name="Content" rows="5" cols="33" required>
+                    </textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="RightSideBar">
+
+                <div>
+                    <h3>Friends Online</h3>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="BottomBar">
             <div class="d-flex flex-row justify-content-evenly mt-4 ">
-                <button class="BottomButton"><span><img src="" alt=""></span>Home</button>
-                <button class="BottomButton"><span><img src="" alt=""></span>My Profile</button>
-                <button class="BottomButton"><span><img src="" alt=""></span>Messages</button>
+                <button class="BottomButton"><span><img src="home_6270664.png" class="Btn-Imge me-1"
+                            alt=""></span>Home</button>
+                <button class="BottomButton"><span><img src="ProfileIcon14.png" alt="" class="Btn-Imge me-1"></span>My
+                    Profile</button>
+                <button class="BottomButton"><span><img src="messages_5809281.png" alt=""
+                            class="Btn-Imge me-1"></span>Messages</button>
+                <img src="icons8-add-50.png" alt="" class="AddBtn">
             </div>
 
         </div>
+
     </footer>
 
 

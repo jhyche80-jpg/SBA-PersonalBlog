@@ -1,72 +1,124 @@
-
- 
-.LeftBar:hover{
-    opacity: 10%;
+.LeftBar:hover {
+  opacity: 10%;
 }
-.LeftSideBar{
-   margin: 0;
+
+.LeftSideBar {
+  margin: 0;
   padding: 10px;
   width: 210px;
-  background-color:#381e72;;
+  background-color: #381e72;
+  ;
   position: fixed;
   height: 100%;
   overflow: auto;
   border-radius: 10px;
 }
-.LeftBarHead{
+
+.LeftBarHead {
   color: white;
 }
-.LeftBar{
-    /* border: solid white; */
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    border-bottom: solid #E8DEF8;
-    margin-top: 10px;
-    border-radius: 10px;
+
+.LeftBar {
+  /* border: solid white; */
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-bottom: solid #E8DEF8;
+  margin-top: 10px;
+  border-radius: 10px;
 }
-.RightSideBar{
-   position: fixed;
+
+.RightSideBar {
+  position: fixed;
   right: 0;
   width: 210px;
-   height: 100%;
+  height: 100%;
   background-color: #381e72;
   /* border: 3px solid green; */
   color: white;
   padding: 10px;
   border-radius: 10px;
 }
-#SearchBar{
+
+#SearchBar {
   position: fixed;
   right: 0;
-  
+
 }
-header{
+
+header {
   /* border: solid black; */
   display: flex;
   align-items: end;
-  
+
 }
-#Headermsg{
+
+#Headermsg {
   color: #381e72;
 }
-.body{
+
+.body {
   background-color: #633b48;
 }
-footer{
-/* border: solid black; */
-bottom: 0;
-width: 100%;
-height: 100px;
-position: fixed;
-background-color: #381e72;
+
+footer {
+  /* border: solid black; */
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: #381e72;
 }
-.BottomButton{
+
+#AddPostModal {
+ background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+.MyModal {
+    position: fixed;
+  z-index: 1;
+ left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+
+
+
+.BottomButton {
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
   background-color: #E8DEF8;
 }
-.BottomButton:hover{
+
+.BottomButton:hover {
   opacity: 80%;
 }
+
+.Btn-Imge {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.AddBtn {
+  background-color: #E8DEF8;
+  border-radius: 60px;
+  border: solid black;
+  border-width: 2px;
+  position: relative;
+}
+
+.AddBtn:hover {
+  opacity: 80%;
+}
+

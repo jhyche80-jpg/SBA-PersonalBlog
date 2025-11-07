@@ -21,5 +21,26 @@
 6. How can you make a scrollable page that keeps an item stagant 
 
 
+## WHat was used !!
+- JavaScript 
+- Bootstrap 
+- Html
+- Figma 
+- Css 
+
 ## what I did 
 1. Create the blog posting app name and bring back the figma website I designed. 
+
+
+
+
+
+### reflection 
+
+
+### references 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
+- https://getbootstrap.com/docs/5.3/utilities/flex/#enable-flex-behaviors
+- https://icons8.com/icons/set/add
+- https://www.figma.com/design/BmrlttpfpBCNhvcy86XTD2/Untitled?node-id=1-2&t=oJJbObxoHeqLwgnU-0
+- https://www.w3schools.com/howto/howto_css_modals.asp
