@@ -30,13 +30,20 @@
 
 ## what I did 
 1. Create the blog posting app name and bring back the figma website I designed. 
-
-
-
+2. It was backwards but i spent too much time on the page design
+3. I then moved to Js and started Starting with the add button 
+4. I made an event listener with the add button and then delegated task 
+5. I also made functions to test myself 
+6. I then made update and save functions 
+7. I had to rewrite  because i found a better way
+8. I restructure the code. 
+10. I moved to the Css file and further editied the placement of things on the page
 
 
 ### reflection 
 
+####  thoughts on this project:
+At first I couldn't figure out how to combine things from previous project to make this one . It was a major challenge like the edit button. How did i go about  it you ask??? Well since you want to know so badly , I had a thought , what if i edit the array that i pushed it to and just replace it there. I do not have to re save and all that and the post will update the information. I do wish however how to structure it inside a button or choice ! 
 
 ### references 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
