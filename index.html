@@ -49,17 +49,33 @@
                         <label for="Title" class="d-flex flex-column"> <strong>Title:</strong>
                             <span id="TitleREQ" class="text-secondary" style="display: none;"> This is required</span>
                         </label>
-                        <input type="text" name="Title" id="Title" class="mb-5" maxlength="15" placeholder="Title" required>
+                        <input type="text" name="Title" id="Title" class="mb-5" maxlength="15" placeholder="Title"
+                            required>
                     </div>
-                    <div class="d-flex  flex-column mb-3">
+                    <div class="d-flex  flex-column mb-1">
+
+                        <div id="Addphotos" class="AddPhotos">
+                            <div>
+                                <input type="file" accept="image/jpeg, image/png, image/jpg" id="ChooseFile">
+                                <h2 class="ms-5 mt-3">Add Photo here </h2>
+                               <img src="addphoto.png" alt="Add Photo Button" id="AddphotoHere" style="width: 500px; height: 500px;">
+                            </div>
+
+
+
+                        </div>
                         <label for="Content"><strong>Comment:</strong> </label>
+
                         <p id="CommentREQ" class="text-secondary" style="display: none;"> This is required</p>
                         <textarea id="Content" name="Content" rows="5" cols="33" required minlength="1"
                             placeholder="Type Comment Here "></textarea>
+
                     </div>
                     <div>
                         <button id="Submit" type="submit">Submit</button>
                         <button id="Close">Close</button>
+                        <button id="AddPhotoBtn"><img src="AttachmentIcon.png" alt="Attachment icon"></button>
+
                     </div>
                 </div>
             </div>

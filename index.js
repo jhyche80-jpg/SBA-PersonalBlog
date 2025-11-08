@@ -10,27 +10,32 @@ const BlogCommentInput = document.getElementById("Content");
 const BlogCommentError = document.getElementById("CommentREQ");
 const Submit = document.getElementById("Submit");
 const Postcard = document.querySelector(".Postcard");
-
+const AddphotoArea = document.querySelector(".AddPhotos")
+const AddphotoBtn = document.getElementById("AddPhotoBtn")
+const AddPhotoHere = document.getElementById("AddphotoHere")
+const ChooseFile = document.getElementById("ChooseFile")
 function CloseModal() {
     Modal.style.display = "none";
     BlogTitleInput.value = "";
     BlogCommentInput.value = "";
     editingPost = null; // reset mode
+    ChosenPhoto = "";
+    AddPhotoHere.src = "";
 }
 function SaveStorage() {
-  localStorage.setItem("Posts", JSON.stringify(Posts));
+    localStorage.setItem("Posts", JSON.stringify(Posts));
 }
 
 function Load() {
-  const stored = localStorage.getItem("Posts");
-  if (stored) {
-    Posts = JSON.parse(stored);
-    count = Posts.length ? Math.max(...Posts.map(p => p.id)) + 1 : 0;
-    UpdatePage(Posts);
-  }
+    const stored = localStorage.getItem("Posts");
+    if (stored) {
+        Posts = JSON.parse(stored);
+        count = Posts.length ? Math.max(...Posts.map(p => p.id)) + 1 : 0;
+        UpdatePage(Posts);
+    }
 }
-function OpenModal() {
-    Modal.style.display = "inline";
+function OpenDisplay(x) {
+    x.style.display = "inline";
 }
 
 function CheckValidity(input, message) {
@@ -50,7 +55,24 @@ function UpdatePage(PostToRender = Posts) {
         const NewpostTag = document.createElement("div");
         NewpostTag.dataset.id = p.id;
         NewpostTag.classList.add("post-card");
-
+        if (p.Image?.trim()){
+             NewpostTag.innerHTML = `
+        <div class="rounded">
+          <div class="d-flex flex-row justify-content-between align-items-start mb-3" style="width:auto;" id="Post${p.id}">
+            <h4 style="width:400px;" class="fs-2">${p.Title}</h4>
+            <div class="ms-5">
+              <button class="Deletebtn btn btn-primary my-hover-btn me-2">Delete Post</button>
+              <button class="EditBtn btn btn-primary my-hover-btn">Edit Post</button>
+            </div>
+          </div>
+          <img src="${p.Image}" alt="Cannot Display Image" style="display:inline; max-width: 500px; max-height-700px">
+          <p><strong>Comment:</strong> ${p.Post}</p>
+          <small>${p.Date}</small>
+        </div>
+    `
+    console.log("Here I am ")
+        }
+        else{
         NewpostTag.innerHTML = `
         <div class="rounded">
             <div class="d-flex flex-row justify-content-between align-items-start mb-3" style= "width:auto;"id="Post${p.id}">
@@ -61,12 +83,12 @@ function UpdatePage(PostToRender = Posts) {
                 <button class="EditBtn btn btn-primary my-hover-btn">Edit Post</button>
                 </div>
             </div>
-            
+            <img src="${p.Image}" alt = "Cannot Display Image" style ="display: none;">
             <p><strong>Comment:</strong> ${p.Post}</p>
             <small>${p.Date}
       </div>
-    `;
-
+    ;
+`}
         Postcard.appendChild(NewpostTag);
     });
 }
@@ -88,6 +110,7 @@ Submit.addEventListener("click", (event) => {
         //  Add new post
         Posts.push({
             id: count++,
+            Image: ChosenPhoto,
             Title: BlogTitleInput.value.trim(),
             Post: BlogCommentInput.value.trim(),
             Date: new Date().toLocaleString()
@@ -102,6 +125,7 @@ Submit.addEventListener("click", (event) => {
 //  Event delegation for Delete / Edit
 Postcard.addEventListener("click", (event) => {
     const postDiv = event.target.closest(".post-card");
+
     if (!postDiv) return;
 
     const postID = parseInt(postDiv.dataset.id);
@@ -117,10 +141,21 @@ Postcard.addEventListener("click", (event) => {
         editingPost = postToEdit;
         BlogTitleInput.value = postToEdit.Title;
         BlogCommentInput.value = postToEdit.Post;
-        OpenModal();
+        OpenDisplay(Modal);
     }
+    
 });
 
-AddPostBtn.addEventListener("click", OpenModal);
+AddPostBtn.addEventListener("click", () => { OpenDisplay(Modal) });
 CloseBtn.addEventListener("click", CloseModal);
 window.addEventListener("DOMContentLoaded", Load);
+AddphotoBtn.addEventListener("click", () => {
+    OpenDisplay(AddphotoArea)
+});
+    let ChosenPhoto = " "
+  ChooseFile.onchange = function () {
+    AddPhotoHere.src = URL.createObjectURL(ChooseFile.files[0]);
+     ChosenPhoto = AddPhotoHere.src
+    console.log(ChooseFile.files[0]);
+
+}
