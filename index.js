@@ -14,6 +14,12 @@ const AddphotoArea = document.querySelector(".AddPhotos")
 const AddphotoBtn = document.getElementById("AddPhotoBtn")
 const AddPhotoHere = document.getElementById("AddphotoHere")
 const ChooseFile = document.getElementById("ChooseFile")
+
+
+// const SelectType = document.getElementById("Selection")
+// const SelectCode = document.getElementById("UploadUrldiv")
+// const SelectPhoto = document.getElementById("imgdiv")
+// ^^^^Code for a selection button later
 function CloseModal() {
     Modal.style.display = "none";
     BlogTitleInput.value = "";
@@ -36,6 +42,9 @@ function Load() {
 }
 function OpenDisplay(x) {
     x.style.display = "inline";
+}
+function CloseDisplay(x) {
+    x.style.display = "none";
 }
 
 function CheckValidity(input, message) {
@@ -159,3 +168,4 @@ AddphotoBtn.addEventListener("click", () => {
     console.log(ChooseFile.files[0]);
 
 }
+

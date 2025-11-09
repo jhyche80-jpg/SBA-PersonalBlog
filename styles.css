@@ -76,9 +76,9 @@ header {
 }
 
 .body {
-  background-color: #633b48;
+  background-color: #1B0045;
   color: white;
-    background: linear-gradient(to bottom, #502A3B, #633b48); 
+    /* background: linear-gradient(to bottom, #502A3B, #633b48);  */
 
 }
 
