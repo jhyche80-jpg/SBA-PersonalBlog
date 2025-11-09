@@ -51,3 +51,6 @@ At first I couldn't figure out how to combine things from previous project to ma
 - https://icons8.com/icons/set/add
 - https://www.figma.com/design/BmrlttpfpBCNhvcy86XTD2/Untitled?node-id=1-2&t=oJJbObxoHeqLwgnU-0
 - https://www.w3schools.com/howto/howto_css_modals.asp
+- https://www.geeksforgeeks.org/html/how-to-create-a-file-upload-button-in-html/
+- https://stackoverflow.com/questions/11847806/javascript-date-set-just-the-date-ignoring-time
+- https://www.w3schools.com/tags/att_textarea_required.asp
